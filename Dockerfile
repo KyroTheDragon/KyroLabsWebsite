@@ -12,11 +12,13 @@ RUN npm run build
 FROM node:20-alpine AS runner
 
 WORKDIR /app
-RUN npm install -g serve
+COPY package*.json ./
+RUN npm ci --omit=dev
 
 COPY --from=builder /app/dist ./dist
+COPY --from=builder /app/server.js ./server.js
 
 ENV PORT=3000
 EXPOSE 3000
 
-CMD ["sh", "-c", "serve -s dist -l tcp://0.0.0.0:$PORT"]
+CMD ["node", "server.js"]

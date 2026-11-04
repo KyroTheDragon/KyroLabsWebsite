@@ -4,6 +4,7 @@ import { Projects } from "./components/Projects";
 import { QualityAssurance } from "./components/QualityAssurance";
 import { Approach } from "./components/Approach";
 import { AboutStudio } from "./components/AboutStudio";
+import { Team } from "./components/Team";
 import { Contact } from "./components/Contact";
 import { Footer } from "./components/Footer";
 import "./App.css";
@@ -27,6 +28,7 @@ function App() {
         <QualityAssurance />
         <Approach />
         <AboutStudio />
+        <Team />
         <Contact />
       </main>
 
