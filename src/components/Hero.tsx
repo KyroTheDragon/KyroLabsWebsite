@@ -16,7 +16,7 @@ export const Hero = () => {
   return (
     <section
       aria-labelledby="hero-heading"
-      className="relative overflow-hidden bg-white dark:bg-zinc-950 px-6 pt-24 pb-20 sm:px-8 sm:pt-32 sm:pb-28"
+      className="relative overflow-hidden bg-white dark:bg-zinc-950 px-4 pt-20 pb-16 sm:px-8 sm:pt-32 sm:pb-28"
     >
       {/* Ambient Top Light Gradients */}
       <div
@@ -36,7 +36,7 @@ export const Hero = () => {
         {/* Main Headline */}
         <h1
           id="hero-heading"
-          className="text-4xl sm:text-6xl md:text-7xl font-extrabold tracking-tight text-zinc-900 dark:text-zinc-100 leading-[1.08] max-w-4xl"
+          className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight text-zinc-900 dark:text-zinc-100 leading-[1.12] sm:leading-[1.08] max-w-4xl"
         >
           Building focused software for{" "}
           <span className="bg-gradient-to-r from-blue-600 via-indigo-600 to-violet-600 bg-clip-text text-transparent">
@@ -46,18 +46,18 @@ export const Hero = () => {
         </h1>
 
         {/* Subtitle */}
-        <p className="mt-6 text-lg sm:text-xl text-zinc-600 dark:text-zinc-400 max-w-2xl leading-relaxed">
+        <p className="mt-5 sm:mt-6 text-base sm:text-xl text-zinc-600 dark:text-zinc-400 max-w-2xl leading-relaxed">
           Kryo Labs designs, engineers, and operates digital platforms and technical infrastructure — from intelligent simulator telemetry to real-time operations software.
         </p>
 
-        {/* Action Buttons */}
-        <div className="mt-10 flex flex-wrap items-center gap-3">
+        {/* Action Buttons: Full width on mobile, inline on tablet/desktop */}
+        <div className="mt-8 sm:mt-10 flex flex-col sm:flex-row items-stretch sm:items-center gap-3 w-full sm:w-auto">
           <Button
             asChild
             size="lg"
-            className="rounded-xl font-medium text-sm h-11 px-6 bg-blue-600 hover:bg-blue-700 text-white shadow-xs transition-colors border-0"
+            className="w-full sm:w-auto rounded-xl font-medium text-sm h-11 px-6 bg-blue-600 hover:bg-blue-700 text-white shadow-xs transition-colors border-0 justify-center"
           >
-            <a href="#projects" className="flex items-center gap-2">
+            <a href="#projects" className="flex items-center justify-center gap-2">
               <span>Explore Mileora</span>
               <ArrowDown className="size-4" aria-hidden="true" />
             </a>
@@ -66,9 +66,9 @@ export const Hero = () => {
             asChild
             variant="outline"
             size="lg"
-            className="rounded-xl font-medium text-sm h-11 px-6 border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900 text-zinc-800 dark:text-zinc-200 hover:bg-zinc-50 dark:hover:bg-zinc-800 hover:border-zinc-300 dark:hover:border-zinc-700 transition-colors shadow-2xs"
+            className="w-full sm:w-auto rounded-xl font-medium text-sm h-11 px-6 border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900 text-zinc-800 dark:text-zinc-200 hover:bg-zinc-50 dark:hover:bg-zinc-800 hover:border-zinc-300 dark:hover:border-zinc-700 transition-colors shadow-2xs justify-center"
           >
-            <a href="#contact" className="flex items-center gap-2">
+            <a href="#contact" className="flex items-center justify-center gap-2">
               <span>Contact Team</span>
               <ArrowRight className="size-4" aria-hidden="true" />
             </a>
@@ -76,68 +76,68 @@ export const Hero = () => {
         </div>
 
         {/* Metric Containers (Gemini Antigravity rounded outline style) */}
-        <div className="mt-16 sm:mt-20 grid grid-cols-2 sm:grid-cols-4 gap-4">
-          <div className="rounded-2xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900/60 p-5 shadow-[0_1px_3px_rgba(0,0,0,0.03)] hover:border-zinc-300 dark:hover:border-zinc-700 transition-all">
-            <span className="block text-3xl font-extrabold tracking-tight text-blue-600 dark:text-blue-400">
+        <div className="mt-12 sm:mt-20 grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4">
+          <div className="rounded-2xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900/60 p-4 sm:p-5 shadow-[0_1px_3px_rgba(0,0,0,0.03)] hover:border-zinc-300 dark:hover:border-zinc-700 transition-all">
+            <span className="block text-2xl sm:text-3xl font-extrabold tracking-tight text-blue-600 dark:text-blue-400">
               60 Hz
             </span>
-            <span className="mt-1 block text-sm font-medium text-zinc-600 dark:text-zinc-400">
+            <span className="mt-1 block text-xs sm:text-sm font-medium text-zinc-600 dark:text-zinc-400">
               Live Telemetry Polling
             </span>
           </div>
 
-          <div className="rounded-2xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900/60 p-5 shadow-[0_1px_3px_rgba(0,0,0,0.03)] hover:border-zinc-300 dark:hover:border-zinc-700 transition-all">
-            <span className="block text-3xl font-extrabold tracking-tight text-emerald-600 dark:text-emerald-400">
+          <div className="rounded-2xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900/60 p-4 sm:p-5 shadow-[0_1px_3px_rgba(0,0,0,0.03)] hover:border-zinc-300 dark:hover:border-zinc-700 transition-all">
+            <span className="block text-2xl sm:text-3xl font-extrabold tracking-tight text-emerald-600 dark:text-emerald-400">
               Real-Time
             </span>
-            <span className="mt-1 block text-sm font-medium text-zinc-600 dark:text-zinc-400">
+            <span className="mt-1 block text-xs sm:text-sm font-medium text-zinc-600 dark:text-zinc-400">
               Telemetry &amp; Streams
             </span>
           </div>
 
-          <div className="rounded-2xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900/60 p-5 shadow-[0_1px_3px_rgba(0,0,0,0.03)] hover:border-zinc-300 dark:hover:border-zinc-700 transition-all">
-            <span className="block text-3xl font-extrabold tracking-tight text-purple-600 dark:text-purple-400">
+          <div className="rounded-2xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900/60 p-4 sm:p-5 shadow-[0_1px_3px_rgba(0,0,0,0.03)] hover:border-zinc-300 dark:hover:border-zinc-700 transition-all">
+            <span className="block text-2xl sm:text-3xl font-extrabold tracking-tight text-purple-600 dark:text-purple-400">
               Local-First
             </span>
-            <span className="mt-1 block text-sm font-medium text-zinc-600 dark:text-zinc-400">
+            <span className="mt-1 block text-xs sm:text-sm font-medium text-zinc-600 dark:text-zinc-400">
               Fast, Resilient State
             </span>
           </div>
 
-          <div className="rounded-2xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900/60 p-5 shadow-[0_1px_3px_rgba(0,0,0,0.03)] hover:border-zinc-300 dark:hover:border-zinc-700 transition-all">
-            <span className="block text-3xl font-extrabold tracking-tight text-amber-600 dark:text-amber-400">
+          <div className="rounded-2xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900/60 p-4 sm:p-5 shadow-[0_1px_3px_rgba(0,0,0,0.03)] hover:border-zinc-300 dark:hover:border-zinc-700 transition-all">
+            <span className="block text-2xl sm:text-3xl font-extrabold tracking-tight text-amber-600 dark:text-amber-400">
               100%
             </span>
-            <span className="mt-1 block text-sm font-medium text-zinc-600 dark:text-zinc-400">
+            <span className="mt-1 block text-xs sm:text-sm font-medium text-zinc-600 dark:text-zinc-400">
               Independent Studio
             </span>
           </div>
         </div>
 
         {/* Tech Logo Ribbon Container */}
-        <div className="mt-8 rounded-2xl border border-zinc-200 dark:border-zinc-800 bg-zinc-50/60 dark:bg-zinc-900/40 p-4 sm:p-5 shadow-[0_1px_3px_rgba(0,0,0,0.02)]">
-          <div className="flex flex-wrap items-center justify-between gap-4 sm:gap-6">
-            <div className="flex items-center gap-2 text-xs font-semibold text-zinc-700 dark:text-zinc-300" title="Go">
-              <GoLogo className="size-5" />
+        <div className="mt-6 sm:mt-8 rounded-2xl border border-zinc-200 dark:border-zinc-800 bg-zinc-50/60 dark:bg-zinc-900/40 p-4 sm:p-5 shadow-[0_1px_3px_rgba(0,0,0,0.02)]">
+          <div className="flex flex-wrap items-center justify-around sm:justify-between gap-3 sm:gap-6">
+            <div className="flex items-center gap-1.5 sm:gap-2 text-xs font-semibold text-zinc-700 dark:text-zinc-300" title="Go">
+              <GoLogo className="size-4 sm:size-5" />
               <span>Go</span>
             </div>
-            <div className="flex items-center gap-2 text-xs font-semibold text-zinc-700 dark:text-zinc-300" title="Node.js">
-              <NodeLogo className="size-5" />
+            <div className="flex items-center gap-1.5 sm:gap-2 text-xs font-semibold text-zinc-700 dark:text-zinc-300" title="Node.js">
+              <NodeLogo className="size-4 sm:size-5" />
               <span>Node.js</span>
             </div>
-            <div className="flex items-center gap-2 text-xs font-semibold text-zinc-700 dark:text-zinc-300" title="TypeScript">
-              <TypeScriptLogo className="size-5" />
+            <div className="flex items-center gap-1.5 sm:gap-2 text-xs font-semibold text-zinc-700 dark:text-zinc-300" title="TypeScript">
+              <TypeScriptLogo className="size-4 sm:size-5" />
               <span>TypeScript</span>
             </div>
-            <div className="flex items-center gap-2 text-xs font-semibold text-zinc-700 dark:text-zinc-300" title="React">
-              <ReactLogo className="size-5" />
+            <div className="flex items-center gap-1.5 sm:gap-2 text-xs font-semibold text-zinc-700 dark:text-zinc-300" title="React">
+              <ReactLogo className="size-4 sm:size-5" />
               <span>React</span>
             </div>
-            <div className="flex items-center gap-2 text-xs font-semibold text-zinc-700 dark:text-zinc-300" title="PostgreSQL">
-              <PostgreSQLLogo className="size-5" />
+            <div className="flex items-center gap-1.5 sm:gap-2 text-xs font-semibold text-zinc-700 dark:text-zinc-300" title="PostgreSQL">
+              <PostgreSQLLogo className="size-4 sm:size-5" />
               <span>PostgreSQL</span>
             </div>
-            <div className="flex items-center gap-2 text-xs font-semibold text-zinc-700 dark:text-zinc-300" title="Docker">
+            <div className="flex items-center gap-1.5 sm:gap-2 text-xs font-semibold text-zinc-700 dark:text-zinc-300" title="Docker">
               <DockerLogo className="size-5" />
               <span>Docker</span>
             </div>

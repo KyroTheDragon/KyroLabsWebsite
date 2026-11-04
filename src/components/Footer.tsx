@@ -2,9 +2,9 @@ import { Github, ArrowUpRight } from "lucide-react";
 
 export const Footer = () => {
   return (
-    <footer className="border-t border-zinc-800 bg-zinc-950 py-16 px-6 sm:px-8 text-zinc-300">
+    <footer className="border-t border-zinc-800 bg-zinc-950 py-12 sm:py-16 px-4 sm:px-8 text-zinc-300">
       <div className="mx-auto max-w-5xl">
-        <div className="grid grid-cols-1 md:grid-cols-[1.5fr_1fr_1fr_1fr] gap-10 pb-12 border-b border-zinc-800">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-[1.5fr_1fr_1fr_1fr] gap-8 sm:gap-10 pb-10 sm:pb-12 border-b border-zinc-800">
           {/* Brand Column - Logo image only, no extra text or icons */}
           <div className="space-y-4">
             <a href="/" className="inline-block focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 rounded-sm" aria-label="Kyro Labs">
@@ -45,11 +45,6 @@ export const Footer = () => {
                 </a>
               </li>
               <li>
-                <a href="#approach" className="text-zinc-400 hover:text-white transition-colors font-medium">
-                  Approach
-                </a>
-              </li>
-              <li>
                 <a href="#about" className="text-zinc-400 hover:text-white transition-colors font-medium">
                   About
                 </a>
@@ -87,10 +82,10 @@ export const Footer = () => {
               </li>
               <li>
                 <a
-                  href="mailto:contact@kryolabs.com"
+                  href="mailto:contact@kyrolabs.com"
                   className="text-zinc-400 hover:text-white transition-colors font-medium"
                 >
-                  contact@kryolabs.com
+                  contact@kyrolabs.com
                 </a>
               </li>
             </ul>
@@ -99,7 +94,8 @@ export const Footer = () => {
 
         {/* Bottom Row */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-zinc-500 font-medium">
-          <p>&copy; {new Date().getFullYear()} Kyro Labs.</p>
+          <p>&copy; {new Date().getFullYear()} Kyro Labs. All rights reserved.</p>
+          <p>Engineered with zero bloat &amp; high precision.</p>
         </div>
       </div>
     </footer>

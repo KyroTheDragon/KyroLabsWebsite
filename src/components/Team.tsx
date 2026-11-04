@@ -48,10 +48,10 @@ export const Team = () => {
   }, []);
 
   return (
-    <section id="team" className="relative px-6 py-20 sm:px-8 sm:py-28 border-t border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-950">
+    <section id="team" className="relative px-4 py-16 sm:px-8 sm:py-28 border-t border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-950">
       <div className="mx-auto max-w-5xl">
         {/* Section Heading */}
-        <div className="max-w-2xl mb-12">
+        <div className="max-w-2xl mb-10 sm:mb-12">
           <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-zinc-900 dark:text-zinc-100">
             Team
           </h2>
@@ -61,9 +61,9 @@ export const Team = () => {
         </div>
 
         {/* Minimal Team Members Grid: Only image (square with rounded edges), Name, and Role */}
-        <div className="flex flex-wrap gap-8 sm:gap-10">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 sm:gap-8 max-w-3xl">
           {members.map((member) => (
-            <div key={member.discordId || member.name} className="group w-40 sm:w-44 space-y-3">
+            <div key={member.discordId || member.name} className="group space-y-2.5">
               <div className="overflow-hidden rounded-2xl border border-zinc-200 dark:border-zinc-800 bg-zinc-100 dark:bg-zinc-900 aspect-square shadow-sm transition-all group-hover:border-zinc-300 dark:group-hover:border-zinc-700">
                 <img
                   src={member.avatar}

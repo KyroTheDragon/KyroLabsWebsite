@@ -49,10 +49,10 @@ export const QualityAssurance = () => {
   ];
 
   return (
-    <section id="quality" className="relative px-6 py-20 sm:px-8 sm:py-28 border-t border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-950">
+    <section id="quality" className="relative px-4 py-16 sm:px-8 sm:py-28 border-t border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-950">
       <div className="mx-auto max-w-5xl">
         {/* Clean Header */}
-        <div className="max-w-2xl mb-12">
+        <div className="max-w-2xl mb-10 sm:mb-12">
           <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-zinc-900 dark:text-zinc-100">
             Engineering Quality &amp; Assurance
           </h2>
@@ -62,11 +62,11 @@ export const QualityAssurance = () => {
         </div>
 
         {/* 4 Clean Cards (Single-layer Antigravity containers, no nested boxes) */}
-        <div className="grid md:grid-cols-2 gap-5">
+        <div className="grid md:grid-cols-2 gap-4 sm:gap-5">
           {standards.map((item) => (
             <div
               key={item.title}
-              className="rounded-2xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900/60 p-6 sm:p-7 shadow-[0_1px_3px_rgba(0,0,0,0.03)] hover:border-zinc-300 dark:hover:border-zinc-700 transition-all duration-200 flex flex-col justify-between"
+              className="rounded-2xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900/60 p-5 sm:p-7 shadow-[0_1px_3px_rgba(0,0,0,0.03)] hover:border-zinc-300 dark:hover:border-zinc-700 transition-all duration-200 flex flex-col justify-between"
             >
               <div>
                 <h3 className="text-lg font-bold text-zinc-900 dark:text-zinc-100">

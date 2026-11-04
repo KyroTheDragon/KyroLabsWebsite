@@ -23,7 +23,7 @@ export const Navbar = () => {
   return (
     <>
       <header className="sticky top-0 z-50 w-full border-b border-zinc-800/80 bg-zinc-950/95 text-white backdrop-blur-md">
-        <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-6 sm:px-8">
+        <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4 sm:px-8">
           {/* Brand Logo - Just the image */}
           <a
             href="/"
@@ -63,47 +63,47 @@ export const Navbar = () => {
             </Button>
           </div>
 
-          {/* Mobile Actions */}
-          <div className="flex md:hidden items-center gap-1.5">
-            <ModeToggle className="flex size-9 items-center justify-center rounded-lg text-zinc-400 hover:text-white hover:bg-zinc-900 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500" />
+          {/* Mobile Actions: Optimized 44px tap targets */}
+          <div className="flex md:hidden items-center gap-1">
+            <ModeToggle className="flex size-10 items-center justify-center rounded-lg text-zinc-400 hover:text-white hover:bg-zinc-900 active:bg-zinc-800 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500" />
             <button
               type="button"
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="flex size-9 items-center justify-center rounded-lg text-zinc-400 hover:text-white hover:bg-zinc-900 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500"
+              className="flex size-10 items-center justify-center rounded-lg text-zinc-400 hover:text-white hover:bg-zinc-900 active:bg-zinc-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500"
               aria-label="Toggle navigation menu"
               aria-expanded={mobileMenuOpen}
             >
               {mobileMenuOpen ? (
-                <X className="size-4" aria-hidden="true" />
+                <X className="size-5" aria-hidden="true" />
               ) : (
-                <Menu className="size-4" aria-hidden="true" />
+                <Menu className="size-5" aria-hidden="true" />
               )}
             </button>
           </div>
         </div>
 
-        {/* Mobile Menu Dropdown */}
+        {/* Mobile Menu Dropdown with Thumb-Friendly Hit Areas */}
         {mobileMenuOpen && (
-          <div className="border-b border-zinc-800 bg-zinc-950 px-6 py-6 md:hidden">
-            <nav aria-label="Mobile Navigation" className="flex flex-col gap-4">
+          <div className="border-b border-zinc-800 bg-zinc-950 px-4 py-5 md:hidden animate-in fade-in-50 slide-in-from-top-2 duration-200">
+            <nav aria-label="Mobile Navigation" className="flex flex-col gap-1">
               {NAV_LINKS.map((link) => (
                 <a
                   key={link.label}
                   href={link.href}
                   onClick={() => setMobileMenuOpen(false)}
-                  className="text-sm font-medium text-zinc-300 hover:text-white transition-colors"
+                  className="flex items-center min-h-[44px] px-3.5 py-2.5 rounded-xl text-base font-medium text-zinc-300 hover:text-white hover:bg-zinc-900 active:bg-zinc-800 transition-colors"
                 >
                   {link.label}
                 </a>
               ))}
-              <div className="pt-3 border-t border-zinc-800">
+              <div className="pt-3 mt-2 border-t border-zinc-800">
                 <Button
-                  size="sm"
+                  size="lg"
                   onClick={() => {
                     setMobileMenuOpen(false);
                     setContactDialogOpen(true);
                   }}
-                  className="w-full rounded-xl font-medium text-xs h-9 bg-blue-600 hover:bg-blue-500 text-white shadow-xs"
+                  className="w-full h-11 rounded-xl font-medium text-sm bg-blue-600 hover:bg-blue-500 text-white shadow-xs"
                 >
                   Get in Touch
                 </Button>

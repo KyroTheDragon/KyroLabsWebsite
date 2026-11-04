@@ -10,7 +10,7 @@ import "./App.css";
 
 function App() {
   return (
-    <div className="min-h-screen bg-background text-foreground antialiased selection:bg-foreground selection:text-background flex flex-col justify-between">
+    <div className="min-h-screen bg-background text-foreground antialiased selection:bg-foreground selection:text-background flex flex-col justify-between overflow-x-hidden">
       {/* WCAG 2.1 AA/AAA Skip to Content landmark */}
       <a
         href="#main-content"

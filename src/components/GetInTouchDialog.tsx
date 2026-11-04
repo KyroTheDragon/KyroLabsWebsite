@@ -16,7 +16,7 @@ interface GetInTouchDialogProps {
 export function GetInTouchDialog({ open, onOpenChange }: GetInTouchDialogProps) {
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
-      <DialogContent className="sm:max-w-md border border-zinc-800 bg-zinc-950 p-6 text-zinc-100 shadow-2xl rounded-2xl">
+      <DialogContent className="w-[calc(100%-2rem)] max-w-md mx-auto border border-zinc-800 bg-zinc-950 p-5 sm:p-6 text-zinc-100 shadow-2xl rounded-2xl">
         <DialogHeader className="space-y-1 text-left">
           <DialogTitle className="text-xl font-bold tracking-tight text-white">
             Get in Touch
