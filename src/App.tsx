@@ -2,7 +2,6 @@ import { Navbar } from "./components/Navbar";
 import { Hero } from "./components/Hero";
 import { Projects } from "./components/Projects";
 import { QualityAssurance } from "./components/QualityAssurance";
-import { Approach } from "./components/Approach";
 import { AboutStudio } from "./components/AboutStudio";
 import { Team } from "./components/Team";
 import { Contact } from "./components/Contact";
@@ -26,7 +25,6 @@ function App() {
         <Hero />
         <Projects />
         <QualityAssurance />
-        <Approach />
         <AboutStudio />
         <Team />
         <Contact />

@@ -13,6 +13,7 @@ const NAV_LINKS: NavLink[] = [
   { href: "#projects", label: "Projects" },
   { href: "#quality", label: "Quality" },
   { href: "#about", label: "About" },
+  { href: "#team", label: "Team" },
 ];
 
 export const Navbar = () => {

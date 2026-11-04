@@ -200,7 +200,7 @@ export const GalleryPortfolio = () => {
             Projects &amp; Platforms
           </h2>
           <p className="max-w-md text-sm text-muted-foreground">
-            Software conceived, architected, and maintained under Kryo Labs. Hover or focus any item to preview technical specs.
+            Software designed, architected, and maintained under Kryo Labs. Hover or focus any item to preview technical specs.
           </p>
         </header>
 

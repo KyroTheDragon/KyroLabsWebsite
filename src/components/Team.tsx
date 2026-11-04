@@ -45,7 +45,7 @@ export const Team = () => {
             Team
           </h2>
           <p className="mt-3 text-base text-zinc-600 dark:text-zinc-400 leading-relaxed">
-            The engineering minds conceiving and operating Kyro Labs software.
+            The engineering minds behind Kyro Labs software.
           </p>
         </div>
 

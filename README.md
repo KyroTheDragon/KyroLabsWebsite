@@ -1,6 +1,6 @@
 # Kyro Labs Website
 
-Official website for **Kyro Labs** — Independent software studio conceiving, building, and operating high-utility digital platforms and technical infrastructure.
+Official website for **Kyro Labs** — Independent software studio designing, building, and operating high-utility digital platforms and technical infrastructure.
 
 ## Tech Stack
 

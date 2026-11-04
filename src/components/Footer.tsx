@@ -15,7 +15,7 @@ export const Footer = () => {
               />
             </a>
             <p className="text-sm text-zinc-400 leading-relaxed max-w-xs">
-              Conceiving, engineering, and operating digital platforms and technical infrastructure.
+              Designing, engineering, and operating digital platforms and technical infrastructure.
             </p>
           </div>
 

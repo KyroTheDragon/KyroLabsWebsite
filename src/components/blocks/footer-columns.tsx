@@ -62,7 +62,7 @@ export const FooterColumns = () => (
             </span>
           </a>
           <p className="max-w-xs text-sm text-muted-foreground leading-relaxed">
-            Software projects, platforms, and technical tools. Conceived, built, and operated with high craft.
+            Software projects, platforms, and technical tools. Designed, built, and operated with high craft.
           </p>
           <div className="pt-2 flex items-center gap-3">
             <a

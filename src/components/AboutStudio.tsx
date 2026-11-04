@@ -31,10 +31,10 @@ export const AboutStudio = () => {
 
           <div className="space-y-6 text-base text-zinc-600 dark:text-zinc-400 leading-relaxed">
             <p>
-              <strong className="text-zinc-900 dark:text-zinc-100 font-bold">Kryo Labs</strong> exists to conceive, develop, and operate high-utility digital platforms. Rather than building generic software or chasing hype cycles, we focus on real operational challenges: logistics coordination, low-latency telemetry streaming, and personal productivity tools.
+              <strong className="text-zinc-900 dark:text-zinc-100 font-bold">Kryo Labs</strong> designs, engineers, and operates focused digital platforms. Rather than building generic software or chasing hype cycles, we concentrate on genuine technical challenges: high-fidelity simulator telemetry, real-time data streaming, and purpose-built operational tools.
             </p>
             <p>
-              We operate as a lean, independent engineering organization. This allows us to prioritize architectural durability, privacy, and ergonomics above all else.
+              Operating as an independent technical studio gives us the freedom to prioritize architectural durability, precision, and ergonomics above all else.
             </p>
 
             <div className="rounded-2xl border border-zinc-200 dark:border-zinc-800 bg-zinc-50/70 dark:bg-zinc-900/40 p-5 sm:p-6 shadow-[0_1px_3px_rgba(0,0,0,0.02)]">

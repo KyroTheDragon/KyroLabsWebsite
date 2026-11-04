@@ -47,7 +47,7 @@ export const Hero = () => {
 
         {/* Subtitle */}
         <p className="mt-6 text-lg sm:text-xl text-zinc-600 dark:text-zinc-400 max-w-2xl leading-relaxed">
-          Kryo Labs conceives, engineers, and operates digital platforms and technical infrastructure — from intelligent simulator telemetry to real-time operations software.
+          Kryo Labs designs, engineers, and operates digital platforms and technical infrastructure — from intelligent simulator telemetry to real-time operations software.
         </p>
 
         {/* Action Buttons */}

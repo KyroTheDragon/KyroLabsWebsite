@@ -21,7 +21,7 @@ export const Projects = () => {
             Software built by Kyro Labs.
           </h2>
           <p className="mt-3 text-base text-zinc-600 dark:text-zinc-400 leading-relaxed">
-            Conceived, engineered, and operated in-house with zero bloat, high precision, and dedicated operational focus.
+            Designed, engineered, and operated in-house with zero bloat, high precision, and dedicated operational focus.
           </p>
         </div>
 
