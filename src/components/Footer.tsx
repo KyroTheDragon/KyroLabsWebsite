@@ -27,22 +27,7 @@ export const Footer = () => {
             <ul className="space-y-2.5 text-sm">
               <li>
                 <a href="#projects" className="text-zinc-400 hover:text-white transition-colors font-medium">
-                  Haulverse
-                </a>
-              </li>
-              <li>
-                <a href="#projects" className="text-zinc-400 hover:text-white transition-colors font-medium">
-                  Rovex Dashboard
-                </a>
-              </li>
-              <li>
-                <a href="#projects" className="text-zinc-400 hover:text-white transition-colors font-medium">
-                  Accordian
-                </a>
-              </li>
-              <li>
-                <a href="#projects" className="text-zinc-400 hover:text-white transition-colors font-medium">
-                  Kryo Foundation
+                  Mileora (ETS2 Tracker)
                 </a>
               </li>
             </ul>

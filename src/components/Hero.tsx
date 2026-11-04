@@ -47,7 +47,7 @@ export const Hero = () => {
 
         {/* Subtitle */}
         <p className="mt-6 text-lg sm:text-xl text-zinc-600 dark:text-zinc-400 max-w-2xl leading-relaxed">
-          Kryo Labs conceives, engineers, and operates digital platforms and technical infrastructure — from intelligent fleet logistics to telemetry monitoring and developer tooling.
+          Kryo Labs conceives, engineers, and operates digital platforms and technical infrastructure — from intelligent simulator telemetry to real-time operations software.
         </p>
 
         {/* Action Buttons */}
@@ -58,7 +58,7 @@ export const Hero = () => {
             className="rounded-xl font-medium text-sm h-11 px-6 bg-blue-600 hover:bg-blue-700 text-white shadow-xs transition-colors border-0"
           >
             <a href="#projects" className="flex items-center gap-2">
-              <span>View Projects</span>
+              <span>Explore Mileora</span>
               <ArrowDown className="size-4" aria-hidden="true" />
             </a>
           </Button>
@@ -79,10 +79,10 @@ export const Hero = () => {
         <div className="mt-16 sm:mt-20 grid grid-cols-2 sm:grid-cols-4 gap-4">
           <div className="rounded-2xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900/60 p-5 shadow-[0_1px_3px_rgba(0,0,0,0.03)] hover:border-zinc-300 dark:hover:border-zinc-700 transition-all">
             <span className="block text-3xl font-extrabold tracking-tight text-blue-600 dark:text-blue-400">
-              4
+              60 Hz
             </span>
             <span className="mt-1 block text-sm font-medium text-zinc-600 dark:text-zinc-400">
-              Core Platforms Built
+              Live Telemetry Polling
             </span>
           </div>
 
