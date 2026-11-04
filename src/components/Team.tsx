@@ -8,12 +8,23 @@ interface TeamMember {
   username?: string;
 }
 
-export const Team = () => {
-  const [member, setMember] = useState<TeamMember>({
+const DEFAULT_MEMBERS: TeamMember[] = [
+  {
     name: "Kyro",
     role: "Lead Developer",
     avatar: "https://cdn.discordapp.com/avatars/622858248587837481/102b4babdb814de4b18e55f955a63205.png?size=256",
-  });
+    discordId: "622858248587837481",
+  },
+  {
+    name: "Beta Tester",
+    role: "Beta Tester",
+    avatar: "https://cdn.discordapp.com/embed/avatars/1.png",
+    discordId: "815905917097738282",
+  },
+];
+
+export const Team = () => {
+  const [members, setMembers] = useState<TeamMember[]>(DEFAULT_MEMBERS);
 
   useEffect(() => {
     let isMounted = true;
@@ -23,8 +34,8 @@ export const Team = () => {
         return res.json();
       })
       .then((data) => {
-        if (isMounted && data?.members?.[0]) {
-          setMember(data.members[0]);
+        if (isMounted && Array.isArray(data?.members) && data.members.length > 0) {
+          setMembers(data.members);
         }
       })
       .catch((err) => {
@@ -49,29 +60,31 @@ export const Team = () => {
           </p>
         </div>
 
-        {/* Minimal Team Member: Image (square with rounded edges), Name, and Role */}
-        <div className="flex flex-wrap gap-8">
-          <div className="group w-44 sm:w-48 space-y-3">
-            <div className="overflow-hidden rounded-2xl border border-zinc-200 dark:border-zinc-800 bg-zinc-100 dark:bg-zinc-900 aspect-square shadow-sm transition-all group-hover:border-zinc-300 dark:group-hover:border-zinc-700">
-              <img
-                src={member.avatar}
-                alt={member.name}
-                className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-103"
-                loading="lazy"
-                onError={(e) => {
-                  e.currentTarget.src = "https://cdn.discordapp.com/embed/avatars/0.png";
-                }}
-              />
+        {/* Minimal Team Members Grid: Only image (square with rounded edges), Name, and Role */}
+        <div className="flex flex-wrap gap-8 sm:gap-10">
+          {members.map((member) => (
+            <div key={member.discordId || member.name} className="group w-40 sm:w-44 space-y-3">
+              <div className="overflow-hidden rounded-2xl border border-zinc-200 dark:border-zinc-800 bg-zinc-100 dark:bg-zinc-900 aspect-square shadow-sm transition-all group-hover:border-zinc-300 dark:group-hover:border-zinc-700">
+                <img
+                  src={member.avatar}
+                  alt={member.name}
+                  className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-103"
+                  loading="lazy"
+                  onError={(e) => {
+                    e.currentTarget.src = "https://cdn.discordapp.com/embed/avatars/0.png";
+                  }}
+                />
+              </div>
+              <div>
+                <h3 className="font-bold text-base sm:text-lg text-zinc-900 dark:text-zinc-100 tracking-tight">
+                  {member.name}
+                </h3>
+                <p className="text-xs sm:text-sm font-medium text-zinc-500 dark:text-zinc-400">
+                  {member.role}
+                </p>
+              </div>
             </div>
-            <div>
-              <h3 className="font-bold text-base sm:text-lg text-zinc-900 dark:text-zinc-100 tracking-tight">
-                {member.name}
-              </h3>
-              <p className="text-xs sm:text-sm font-medium text-zinc-500 dark:text-zinc-400">
-                {member.role}
-              </p>
-            </div>
-          </div>
+          ))}
         </div>
       </div>
     </section>
