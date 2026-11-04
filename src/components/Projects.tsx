@@ -1,4 +1,4 @@
-import { Gauge, Radio, Truck, CheckCircle2, Navigation } from "lucide-react";
+import { Radio } from "lucide-react";
 import { TechBadge } from "./TechLogos";
 
 export const Projects = () => {
@@ -25,11 +25,6 @@ export const Projects = () => {
             {/* Details Column */}
             <div className="space-y-6">
               <div>
-                <div className="flex items-center gap-2 mb-2">
-                  <span className="text-xs font-bold uppercase tracking-wider text-blue-600 dark:text-blue-400">
-                    Euro Truck Simulator 2 Tracker
-                  </span>
-                </div>
                 <h3 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-zinc-900 dark:text-zinc-100">
                   Mileora
                 </h3>
@@ -83,60 +78,14 @@ export const Projects = () => {
               </div>
             </div>
 
-            {/* Visual Media & Live Simulation Column */}
-            <div className="space-y-4">
-              {/* Official Mileora Banner Art */}
+            {/* Visual Media Column */}
+            <div>
               <div className="overflow-hidden rounded-2xl border border-zinc-200 dark:border-zinc-800 bg-zinc-950 shadow-lg group">
                 <img
                   src="/mileora.jpg"
-                  alt="Mileora — ETS2 Tracker by Kyro Labs"
+                  alt="Mileora by Kyro Labs"
                   className="w-full h-auto object-cover transform transition-transform duration-500 group-hover:scale-102"
                 />
-              </div>
-
-              {/* Live Telemetry HUD Mockup */}
-              <div className="rounded-2xl border border-zinc-200 dark:border-zinc-800 bg-zinc-50/80 dark:bg-zinc-950/80 p-4 sm:p-5 shadow-xs text-xs space-y-3">
-                <div className="flex items-center justify-between border-b border-zinc-200/80 dark:border-zinc-800/80 pb-2.5">
-                  <div className="flex items-center gap-2">
-                    <span className="flex size-2 rounded-full bg-emerald-500 animate-pulse" />
-                    <span className="font-bold text-zinc-900 dark:text-zinc-100">ETS2 Live Telemetry</span>
-                  </div>
-                  <span className="flex items-center gap-1 text-[11px] text-emerald-600 dark:text-emerald-400 font-medium">
-                    <CheckCircle2 className="size-3.5" />
-                    SDK Connected
-                  </span>
-                </div>
-
-                {/* Telemetry Metrics */}
-                <div className="grid grid-cols-3 gap-2 text-center">
-                  <div className="rounded-xl border border-zinc-200 dark:border-zinc-800/80 bg-white dark:bg-zinc-900/60 p-2">
-                    <span className="text-[10px] text-zinc-500 block">Current Speed</span>
-                    <span className="font-bold text-zinc-900 dark:text-zinc-100 text-sm">82 km/h</span>
-                  </div>
-                  <div className="rounded-xl border border-zinc-200 dark:border-zinc-800/80 bg-white dark:bg-zinc-900/60 p-2">
-                    <span className="text-[10px] text-zinc-500 block">Gear Ratio</span>
-                    <span className="font-bold text-zinc-900 dark:text-zinc-100 text-sm">D12 / Auto</span>
-                  </div>
-                  <div className="rounded-xl border border-zinc-200 dark:border-zinc-800/80 bg-white dark:bg-zinc-900/60 p-2">
-                    <span className="text-[10px] text-zinc-500 block">Truck Damage</span>
-                    <span className="font-bold text-emerald-600 dark:text-emerald-400 text-sm">0.0%</span>
-                  </div>
-                </div>
-
-                {/* Job Route Strip */}
-                <div className="rounded-xl border border-zinc-200 dark:border-zinc-800/80 bg-white dark:bg-zinc-900/60 p-2.5 flex items-center justify-between text-[11px]">
-                  <div className="flex items-center gap-2">
-                    <Truck className="size-4 text-blue-500" />
-                    <div>
-                      <span className="font-semibold text-zinc-900 dark:text-zinc-100 block">Berlin &rarr; Rotterdam</span>
-                      <span className="text-[10px] text-zinc-500">Heavy Machinery • 24.5t</span>
-                    </div>
-                  </div>
-                  <div className="text-right">
-                    <span className="font-semibold text-zinc-900 dark:text-zinc-100 block">348 km</span>
-                    <span className="text-[10px] text-emerald-600 dark:text-emerald-400 font-medium">On Schedule</span>
-                  </div>
-                </div>
               </div>
             </div>
           </div>
