@@ -36,7 +36,7 @@ export async function getDiscordTeamData() {
   // Default friend avatar based on Discord Snowflake algorithm
   const friendDefaultAvatarIndex = Number((BigInt(FRIEND_USER_ID) >> 22n) % 6n);
   let friendMember = {
-    name: process.env.DISCORD_FRIEND_NAME || "Beta Tester",
+    name: process.env.DISCORD_FRIEND_NAME || "Lucia :3",
     role: "Beta Tester",
     avatar: `https://cdn.discordapp.com/embed/avatars/${friendDefaultAvatarIndex}.png`,
     discordId: FRIEND_USER_ID,
@@ -104,7 +104,7 @@ export async function getDiscordTeamData() {
           : `https://cdn.discordapp.com/embed/avatars/${friendDefaultAvatarIndex}.png`;
 
         friendMember = {
-          name: friendData.global_name || friendData.username || "Beta Tester",
+          name: friendData.global_name || friendData.username || "Lucia :3",
           role: "Beta Tester",
           avatar: avatarUrl,
           discordId: friendData.id,

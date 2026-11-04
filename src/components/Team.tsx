@@ -16,7 +16,7 @@ const DEFAULT_MEMBERS: TeamMember[] = [
     discordId: "622858248587837481",
   },
   {
-    name: "Beta Tester",
+    name: "Lucia :3",
     role: "Beta Tester",
     avatar: "https://cdn.discordapp.com/embed/avatars/1.png",
     discordId: "815905917097738282",
